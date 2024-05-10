@@ -1,0 +1,570 @@
+/* ----Desktop-view-first--- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 1200px;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+}
+header {
+    background-image: url(../assets/metacubo.jpeg);
+    height: 5rem;
+    width: 1200px;
+    padding: 1rem;
+}
+nav {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+nav img {
+    height: 3rem;
+    width: 3rem;
+}
+ul li a {
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.5rem; 
+}
+ul li a {
+    color: white;
+    text-decoration: none;
+}
+/* ---rayo-violeta--- */
+
+#rayo-azul-violeta {
+    display: flex;
+    width: 1200px;
+}
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+aside {
+    width: 50%;
+    background-image: url(../assets/alas.jpg);
+}
+.migue {
+    width: 247px;
+    height: 350px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+} 
+ .shanta {
+    width: 264px;
+    height: 276px;
+}
+.kwan {   
+    width: 247px;
+    height: 344px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.omm {
+    width: 264px;
+    height: 276px;
+}
+#rayo-azul-violeta h1 {
+    padding-top: 1rem;
+}
+#rayo-azul-violeta h3 {
+    padding-top: 1rem;
+}
+#rayo-azul-violeta p {
+    padding: 8px;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+p {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.8rem;
+}
+h1 {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 3rem;
+}
+h2 {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 2.5rem;
+}
+h3 {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* ---rayo-verde-rosa-- */
+
+#rayo-verde-rosa {
+    display: flex;
+    width: 1200px;
+}
+.rafa {
+    width: 250px;
+    height: 342px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+} 
+ .sanea {
+    width: 242px;
+    height: 245px;
+}
+.chamu {   
+    width: 250px;
+    height: 342px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.atae {
+    width: 242px;
+    height: 245px;
+}
+#rayo-verde-rosa h1 {
+    padding-top: 1rem;
+}
+#rayo-verde-rosa h3 {
+    padding-top: 1rem;
+}
+#rayo-verde-rosa p {
+    padding: 8px;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+/* ---rayo-oro-rubi-- */
+
+#rayo-oro-rubi {
+    display: flex;
+    width: 1200px;
+}
+.uri {
+    width: 250px;
+    height: 342px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+} 
+ .telai {
+    width: 242px;
+    height: 245px;
+}
+.uri {   
+    width: 250px;
+    height: 342px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.halai {
+    width: 242px;
+    height: 245px;
+}
+#rayo-oro-rubi h1 {
+    padding-top: 1rem;
+}
+#rayo-oro-rubi h3 {
+    padding-top: 1rem;
+}
+#rayo-oro-rubi p {
+    padding: 8px;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+/* -----index---- */
+
+#index {
+    display: flex;
+    width: 1200px;
+}
+#index div img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#index div.cuerpo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-image: url(../assets/graciasdiosss.jpg);
+}
+#index p {
+    padding: 8px;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+footer {
+    background-image: url(../assets/metacubo.jpeg);
+    padding: 1.5rem;
+    height: 5rem;
+}
+footer h3 {
+    color: white;
+}
+
+/* ---contacto-- */
+
+.grid-section {
+    background-image: url(../assets/graciasdiosss.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.grid-main img{
+    height: 400px;
+    width: 300px;
+}
+.grid-aside img {
+    height: 400px;
+    width: 300px;
+}
+.grid-footer img {
+    height: 300px;
+    width: 300px;
+}
+.grid-footer1 img {
+    height: 300px;
+    width: 600px;
+}
+.grid-footer2 img {
+    height: 300px;
+    width: 300px;
+}
+.grid-section h1 {
+    padding-top: 1.5rem;
+} 
+.grid-section p {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.8rem;
+    padding-top: 1rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+}
+.grid-section form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+.wsp {
+    background-color: rgb(10, 204, 10);
+    width: 10rem;
+    height: 3rem;
+    text-align: center;
+    border-style: solid;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.grid-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+.grid-conteiner {
+    display: grid;
+    grid-template-columns: 300px 600px 300px;
+    grid-template-rows: 400px 300px;
+    /* grid-column-gap: 8px;
+    grid-row-gap: 8px; */
+}   
+
+/* --------------------------------mobile-view------------------------------------- */
+
+@media screen and (min-width: 320px) and (max-width:767px){
+
+    /* -----------------contacto------------------  */
+
+    .grid-section {
+        background-image: url(../assets/graciasdiosss.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .grid-main img{
+        height: 35rem;
+        width: 35rem;
+    }
+    .grid-aside img {
+        height: 35rem;
+        width: 35rem;
+    }
+    .grid-footer img {
+        height: 35rem;
+        width: 35rem;
+    }
+    .grid-footer1 img {
+        height: 35rem;
+        width: 35rem;
+    }
+    .grid-footer2 img {
+        height: 35rem;
+        width: 35rem;
+    }
+    .grid-section h1 {
+        font-weight: 400;
+        font-size: 1.8rem;
+        padding-top: 1.5rem;
+    }
+    .grid-section p {
+        font-weight: 400;
+        font-size: 1.2rem;
+    }
+    .wsp {
+        width: 8rem;
+        height: 2rem;
+        font-size: 8px;
+    }
+    .grid-conteiner {
+        display: grid;
+        grid-template-columns: 35rem;
+        grid-template-rows: repeat(5, 35rem);
+        grid-row-gap: 1rem;
+    }   
+    header {
+        width: 35rem;
+    } 
+    ul li a {
+        font-size: 1rem;
+    }
+    
+    /* -----------------rayo-violeta-azul---------------------- */
+    body {
+        display: block;
+        height: 700px;
+    }
+    header {
+        width: 350px;
+    }
+    ul li a {
+        font-size: 1rem; 
+    }
+    #rayo-azul-violeta {
+        display: inline-block;
+        width: 350px;
+    }
+    article {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+    }
+    aside {
+        width: 400px;
+        background-image: url(../assets/alas.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .migue {
+        width: 350px;
+        height: 350px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    } 
+     .shanta {
+        width: 350px;
+        height: 350px;
+    }
+    .kwan {   
+        width: 350px;
+        height: 350px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .omm {
+        width: 350px;
+        height: 350px;
+    }
+    #rayo-azul-violeta h1 {
+        padding-top: 1rem;
+    }
+    #rayo-azul-violeta h3 {
+        padding-top: 1rem;
+    }
+    #rayo-azul-violeta p {
+        padding: 8px;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    aside p {
+        font-weight: 300;
+        font-size: 1rem;
+    }
+    aside h1 {
+        font-weight: 300;
+        font-style: normal;
+        text-align: center;
+        font-size: 1.8rem;
+    }
+    aside h2 {
+        font-weight: 300;
+        font-size: 1.5rem;
+    }
+}
+
+/* ------------------------------------tablet-view--------------------------------- */
+
+@media screen and (min-width:768px) and (max-width:1023px){
+    
+    /* -----contacto-----  */
+    
+    .grid-section {
+        background-image: url(../assets/graciasdiosss.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .grid-main img{
+        height: 40rem;
+        width: 40rem;
+    }
+    .grid-aside img {
+        height: 40rem;
+        width: 40rem;
+    }
+    .grid-footer img {
+        height: 40rem;
+        width: 40rem;
+    }
+    .grid-footer1 img {
+        height: 40rem;
+        width: 40rem;
+    }
+    .grid-footer2 img {
+        height: 40rem;
+        width: 40rem;
+    }
+    .grid-section h1 {
+        font-weight: 400;
+        font-size: 2.5rem;
+        padding-top: 1.5rem;
+    }
+    .grid-section p {
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+    .wsp {
+        width: 10rem;
+        height: 3rem;
+        font-size: 14px;
+    }
+    .grid-conteiner {
+        display: grid;
+        grid-template-columns: 40rem 40rem;
+        grid-template-rows: 40rem 40rem 40rem;  
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+    }   
+    header {
+        width: 81rem;
+    } 
+    ul li a {
+        font-size: 1.5rem;
+    }
+    
+    /* -----------rayo-violeta-azul------------ */
+
+    header {
+        width: 90rem;
+    }
+    ul li a {
+        font-size: 1.5rem; 
+    }
+    #rayo-azul-violeta {
+        display: flex;
+        width: 90rem;
+    }
+    article {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+    }
+    aside {
+        width: 50%;
+        background-image: url(../assets/alas.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .migue {
+        width: 20rem;
+        height: 30rem;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    } 
+     .shanta {
+        width: 20rem;
+        height: 20rem;
+    }
+    .kwan {   
+        width: 20rem;
+        height: 30rem;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .omm {
+        width: 20rem;
+        height: 20rem;
+    }
+    #rayo-azul-violeta p {
+        font-weight: 400;
+        font-size: 1.4rem;
+        padding: 8px;
+        margin-right: 1.5rem;
+        margin-left: 1.5rem;
+    }
+    aside h1 {
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    aside h2 {
+        font-weight: 400;
+        font-size: 2rem;
+    }
+}
+
+/* -----------------HASTA-ACÁ-POR-AHORA--------TNKS */
