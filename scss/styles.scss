@@ -4,7 +4,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	max-width: 1200px;
+	max-width: 1399px;
 
 }
 html {
@@ -53,6 +53,37 @@ h3 {
     font-style: normal;
     text-align: center;
 	font-size: 1.8rem;
+}
+
+footer{
+	background-color: #0a042e;
+	height: 5rem;
+	@include mobile {
+		height: 4rem;
+	}
+	h3 {
+		color: white;
+		@include mobile { 
+			font-size: 1.3rem;
+			padding: 1.2rem;
+		}
+		@include tablet {
+			font-size: 1.4rem;
+			padding: 1.5rem;
+		}
+		@include notebook {
+			font-size: 1.6rem;
+			padding: 1.4rem;
+		}
+		@include desktop {
+			font-size: 1.7rem;
+			padding: 1.6rem;
+		}
+		@include exlarg {
+			font-size: 1.7rem;
+			padding: 1.6rem;
+		}
+	}
 }
 
 /* --------------------------------------index------------------------------- */
@@ -139,6 +170,10 @@ h3 {
 			font-size: 4rem;
 			margin-top: 8px;
 			}
+			@include exlarg {
+				font-size: 4rem;
+				margin-bottom: 5px;
+				}
 		}
 		p {
 			@include mobile {
@@ -161,29 +196,11 @@ h3 {
 			padding-left: 1.5rem;
 			padding-right: 1.5rem;
 			}
-		}
-	}
-}
-
-footer{
-	background-color: #0a042e;
-	height: 5rem;
-	@include mobile {
-		height: 4rem;
-	}
-	h3 {
-		color: white;
-		padding: 1.5rem;
-		@include mobile { 
-		padding: 1rem;
-		font-size: 1rem;
-		}
-		@include tablet {
-		padding: 1rem;
-		font-size: 1.3rem;
-		}
-		@include notebook {
-			font-size: 1.6rem;
+			@include exlarg {
+			font-size: 2.2rem;
+			padding-left: 1.5rem;
+			padding-right: 1.5rem;
+			}
 		}
 	}
 }
@@ -250,10 +267,13 @@ aside {
 		width: 170px;
 		height: 270px;
 	}
+	@include exlarg {
+		width: 260px;
+		height: 360px;
+		margin-bottom: 1rem;
+	}
 }
 .shanta {
-	width: 240px;
-	height: 240px;
 	border-radius: 100%;
 	@include tablet {
 		width: 120px;
@@ -262,6 +282,17 @@ aside {
 	@include notebook {
 		width: 170px;
 		height: 170px;
+	}
+	@include desktop {
+		width: 240px;
+		height: 240px;
+		margin-bottom: 2rem;
+	}
+	@include exlarg {
+		width: 260px;
+		height: 260px;
+		margin-top: 1rem;
+		margin-bottom: 2rem;
 	}
 }
 .kwan {
@@ -283,10 +314,13 @@ aside {
 		width: 170px;
 		height: 270px;
 	}
+	@include exlarg {
+		width: 260px;
+		height: 360px;
+		margin-bottom: 1rem;
+	}
 }
 .omm {
-	width: 240px;
-	height: 240px;
 	border-radius: 100%;
 	@include tablet {
 		width: 120px;
@@ -295,6 +329,17 @@ aside {
 	@include notebook {
 		width: 170px;
 		height: 170px;
+	}
+	@include desktop {
+		width: 240px;
+		height: 240px;
+		margin-bottom: 2rem;
+	}
+	@include exlarg {
+		width: 260px;
+		height: 260px;
+		margin-top: 1rem;
+		margin-bottom: 2rem;
 	}
 }
 #rayo-azul-violeta h1 {
@@ -313,6 +358,9 @@ aside {
 	@include tablet {
 		font-size: 1.8rem;
 	}
+	@include exlarg {
+		font-size: 2.4rem;
+	}
 }
 #rayo-azul-violeta h3 {
 	padding-top: 1rem;
@@ -321,6 +369,9 @@ aside {
 	}
 	@include notebook {
 		font-size: 1.6rem;
+	}
+	@include exlarg {
+		font-size: 2rem;
 	}
 }
 #rayo-azul-violeta p {
@@ -335,6 +386,9 @@ aside {
 	}
 	@include notebook {
 		font-size: 1.3rem;
+	}
+	@include exlarg {
+		font-size: 1.9rem;
 	}
 }
 
@@ -386,10 +440,13 @@ article {
 		width: 170px;
 		height: 270px;
 	}
+	@include exlarg {
+		width: 260px;
+		height: 360px;
+		margin-bottom: 1rem;
+	}
 }
 .sanea {
-	width: 240px;
-	height: 240px;
 	border-radius: 100%;
 	@include tablet {
 		width: 120px;
@@ -398,6 +455,17 @@ article {
 	@include notebook {
 		width: 170px;
 		height: 170px;
+	}
+	@include desktop {
+		width: 240px;
+		height: 240px;
+		margin-bottom: 2rem;
+	}
+	@include exlarg {
+		width: 260px;
+		height: 260px;
+		margin-top: 1rem;
+		margin-bottom: 2rem;
 	}
 }
 .chamu {
@@ -419,10 +487,13 @@ article {
 		width: 170px;
 		height: 270px;
 	}
+	@include exlarg {
+		width: 260px;
+		height: 360px;
+		margin-bottom: 1rem;
+	}
 }
 .atae {
-	width: 240px;
-	height: 240px;
 	border-radius: 100%;
 	@include tablet {
 		width: 120px;
@@ -432,6 +503,18 @@ article {
 		width: 170px;
 		height: 170px;
 	}
+	@include desktop {
+	width: 240px;
+	height: 240px;
+	margin-bottom: 2rem;
+	}
+	@include exlarg {
+		width: 260px;
+		height: 260px;
+		margin-top: 1rem;
+		margin-bottom: 2rem;
+	}
+
 }
 #rayo-verde-rosa h1 {
     padding-top: 1rem;
@@ -452,6 +535,9 @@ article {
 	@include notebook {
 		font-size: 1.8rem;
 	}
+	@include exlarg {
+		font-size: 2.2rem;
+	}
 }
 #rayo-verde-rosa h3 {
 	padding-top: 1rem;
@@ -463,6 +549,9 @@ article {
 	}
 	@include notebook {
 		font-size: 1.6rem;
+	}
+	@include exlarg {
+		font-size: 2rem;
 	}
 }
 #rayo-verde-rosa p {
@@ -476,7 +565,10 @@ article {
 		font-size: 1.1rem;
 	}
 	@include notebook {
-		font-size: 1.40rem;
+		font-size: 1.4rem;
+	}
+	@include exlarg {
+		font-size: 1.95rem;
 	}
 }
 
@@ -496,6 +588,9 @@ article {
 		background-image: url(../assets/flovida.jpeg);
 		background-position: center;
 		background-size: cover;
+		.uri{
+			display: none;
+		}
 		.telai{
 			display: none;
 		}
@@ -505,10 +600,29 @@ article {
 		.halai{
 			display: none;
 		}
+		
 	}
 }
 
 .uri {
+	width: 250px;
+	height: 350px;
+	border-radius: 15%;
+	@include tablet {
+		width: 120px;
+		height: 180px;
+	}
+	@include notebook {
+		width: 170px;
+		height: 270px;
+	}
+	@include exlarg {
+		width: 260px;
+		height: 360px;
+		margin-bottom: 1rem;
+	}
+}
+.uriel {
 	width: 250px;
 	height: 350px;
 	border-radius: 15%;
@@ -527,6 +641,11 @@ article {
 		width: 170px;
 		height: 270px;
 	}
+	@include exlarg {
+		width: 260px;
+		height: 360px;
+		margin-bottom: 1rem;
+	}
 }
 .telai {
 	width: 240px;
@@ -539,6 +658,12 @@ article {
 	@include notebook {
 		width: 170px;
 		height: 170px;
+	}
+	@include exlarg {
+		width: 260px;
+		height: 260px;
+		margin-top: 1rem;
+		margin-bottom: 2rem;
 	}
 }
 
@@ -553,6 +678,12 @@ article {
 	@include notebook {
 		width: 170px;
 		height: 170px;
+		}
+	@include exlarg {
+		width: 260px;
+		height: 260px;
+		margin-top: 1rem;
+		margin-bottom: 2rem;
 	}
 }
 #rayo-oro-rubi h1 {
@@ -562,6 +693,9 @@ article {
 	}
 	@include tablet {
 		font-size: 2.2rem;
+	}
+	@include exlarg {
+		font-size: 3rem;
 	}
 }
 #rayo-oro-rubi h2 {
@@ -574,6 +708,9 @@ article {
 	@include notebook {
 		font-size: 1.8rem;
 	}
+	@include exlarg {
+		font-size: 2.5rem;
+	}
 }
 
 #rayo-oro-rubi h3 {
@@ -583,6 +720,12 @@ article {
 	}
 	@include notebook {
 		font-size: 1.6rem;
+	}
+	@include desktop {
+		font-size: 1.8rem;
+	}
+	@include exlarg {
+		font-size: 2rem;
 	}
 }
 
@@ -599,47 +742,60 @@ article {
 	@include notebook {
 		font-size: 1.35rem;
 	}
+	@include exlarg {
+		font-size: 1.9rem;
+	}
 }
 
 /* ---------------------------------contacto-------------------------- */
 // -----------------------------------------------------------------▼
 
-.corpo {
-	background-image: url(../assets/shantaena77.png);
-	background-position: center;
-	background-size: cover;
+.container-contacto{
+	display: flex;
 	width: 100%;
-	h1 {
-		padding-top: 1.2rem;
-		font-size: 2.7rem;
-		font-weight: 540;
-		@include mobile {
-			font-size: 2.5rem;
-			padding-top: 1rem;
+	@include mobile {
+		display: block;
+	}
+}
+
+.costillas {
+	background-color: #f4e8aa;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 25%;
+	@include mobile {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		background-image: url(../assets/flovida.jpeg);
+		background-position: center;
+		background-size: cover;
+		.mikael{
+			display: none;
 		}
-		@include tablet {
-			font-size: 3.5rem;
-			padding-top: 1rem;
+		h3{
+			display: none;
 		}
-		@include notebook {
-			font-size: 2.5rem;
-			padding-top: 1.2rem;
+		.elementos{
+			display: none;
+		}
+		.cristal {
+			display: none;
 		}
 	}
-	p {
-		font-size: 1.55rem;
-		padding-left: 2rem;
-		padding-right: 2rem;
-		font-weight: 550;
-		@include mobile{
-			font-size: 1.4rem;
-		}
-		@include tablet{
-			font-size: 1.7rem;
-		}
-		@include notebook{
-			font-size: 1.4rem;
-		}
+}
+
+.iam {
+	background-image: url(../assets/rayosdeluz.jpeg);
+	background-position: center;
+	background-size: cover;
+	width: 50%;
+	@include mobile {
+		width: 100%;
+		height: auto;
+		padding-bottom: 1rem;
 	}
 	form {
 		display: flex;
@@ -649,67 +805,195 @@ article {
 		padding-bottom: 3rem;
 	}
 }
-.mikael{
-	margin-left: 1rem;
-	margin-right: 5px;
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-	height: 395px;
-	width: 276px;	
-	@include notebook{
-	height: 330px;	
-	width: 230px;
-	}	
-}
-.luzbel {
-	margin-left: 0;
-	margin-right: 2rem;
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-	height: 395px;
-	width: 288px;
-	@include notebook{
-	height: 330px;
-	width: 220px;
+
+.mikael {
+	border-radius: 15%;
+	@include tablet {
+		width: 120px;
+		height: 180px;
+	}
+	@include notebook {
+		width: 170px;
+		height: 270px;
+	}
+	@include desktop {
+		width: 240px;
+		height: 350px;
+	}
+	@include exlarg {
+		width: 260px;
+		height: 370px;
 	}
 }
-.cristal {
-	margin-left: 1rem;
-	margin-right: 1rem;
-	margin-bottom: 1rem;
-	height: 300px;
-	width: 276px;
-	@include notebook{
-	height: 250px;
-	width: 230px;
-	}
-}
+
 .elementos {
-	margin-top: 1rem;
-	height: 300px;
-	width: 594px;
-	@include notebook{
-	height: 200px;
-	width: 494px;
+	border-radius: 15%;
+	@include tablet {
+		width: 120px;
+		height: 180px;
 	}
+	@include notebook {
+		width: 170px;
+		height: 270px;
+	}
+	@include desktop {
+		width: 240px;
+		height: 350px;
+	}
+	@include exlarg {
+		width: 260px;
+		height: 370px;
+	}
+}
+
+.cristal {
+	border-radius: 15%;
+	@include tablet {
+		width: 120px;
+		height: 120px;
+	}
+	@include notebook {
+		width: 170px;
+		height: 170px;
+	}
+	@include desktop {
+		width: 240px;
+		height: 240px;
+		margin-bottom: 2rem;
+	}
+	@include exlarg {
+		width: 260px;
+		height: 260px;
+		margin-bottom: 2rem;
+	}
+}
+
+.metatron {
+	border-radius: 15%;
 	@include mobile {
-		display: none;
+		width: 250px;
+		height: 250px;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		border-radius: 100%;
 	}
 	@include tablet {
-		display: none;
+		width: 120px;
+		height: 120px;
+	}
+	@include notebook {
+		width: 170px;
+		height: 170px;
+	}
+	@include desktop {
+		width: 240px;
+		height: 240px;
+		margin-bottom: 2rem;
+	}
+	@include exlarg {
+		width: 260px;
+		height: 260px;
+		margin-bottom: 2rem;
 	}
 }
-.metatron {
-	margin-left: 0;
-	margin-right: 2rem;
-	margin-bottom: 1rem;
-	height: 300px;
-	width: 288px;
-	@include notebook{
-	height: 250px;
-	width: 220px;
+
+.container-contacto h1 {
+    padding-top: 1rem;
+	@include mobile {
+		font-size: 2.6rem;
+		padding-top: 1.5rem;
+	}
+	@include tablet {
+		font-size: 2.2rem;
+	}
+	@include desktop {
+		font-size: 3.5rem;
+		padding-top: 2rem;
+		padding-bottom: 5px;
+	}
+	@include exlarg {
+		font-size: 3.5rem;
+		padding-top: 2rem;
+		padding-bottom: 5px;
 	}
 }
+
+.container-contacto h3 {
+	padding-top: 1rem;
+	@include tablet {
+		font-size: 1.4;
+	}
+	@include notebook {
+		font-size: 1.6rem;
+	}
+	@include desktop {
+		padding-top: 2rem;
+	}
+	@include exlarg {
+		padding-top: 2rem;
+		font-size: 2rem;
+	}
+}
+
+.container-contacto p {
+	@include mobile {
+		font-size: 1.6rem;
+		font-weight: 540;
+		margin-right: 2rem;
+		margin-left: 2rem;
+	}
+	@include tablet {
+		font-size: 1.1rem;
+		margin-right: 1.5rem;
+		margin-left: 1.5rem;
+	}
+	@include notebook {
+		font-size: 1.7rem;
+		margin-right: 1.5rem;
+		margin-left: 1.5rem;
+	}
+	@include desktop {
+		margin-right: 5rem;
+		margin-left: 5rem;
+		font-size: 2.2rem;
+	}
+	@include exlarg {
+		margin-right: 5rem;
+		margin-left: 5rem;
+		font-size: 2.40rem;
+	}
+}
+
+.wsp {
+	background-color: rgb(10, 204, 10);
+	text-align: center;
+	border-style: solid;
+	border-radius: 5px;
+	animation-name: moverBoton;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	width: 8rem;
+	height: 2.5rem;
+	font-size: 1.1rem;
+	margin-top: 1.5rem;
+	font-weight: 500;
+	@include desktop{
+		width: 12rem;
+		height: 3rem;
+		font-size: 1.6rem;
+		font-weight: 500;
+		margin-top: 1rem;
+	}
+	@include exlarg{
+		width: 12rem;
+		height: 3rem;
+		font-size: 1.6rem;
+		font-weight: 500;
+		margin-top: 1rem;
+	}
+}
+
 @keyframes moverBoton {
 	0%{
 		transform: scale(1,1);
@@ -725,55 +1009,5 @@ article {
 	}
 	100%{
 		transform: scale(1, 1);
-	}
-}
-.wsp {
-	background-color: rgb(10, 204, 10);
-	text-align: center;
-	border-style: solid;
-	border-radius: 5px;
-	animation-name: moverBoton;
-	animation-duration: 3s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	width: 8rem;
-	height: 2.5rem;
-	font-size: 1.1rem;
-	margin-top: 1rem;
-	font-weight: 500;
-	@include desktop{
-		width: 10rem;
-		height: 3rem;
-		font-size: 1.3rem;
-		font-weight: 500;
-	}
-}
-.container-xs-sm-md-xl-xxl {
-	background-color: black;
-	@include mobile {
-		display: flex;
-		flex-direction: column;
-	}
-	@include tablet {
-		display: flex;
-		flex-direction: column;
-	}
-}
-.col-6{
-	@include mobile {
-		width: 100%;
-	}
-	@include tablet {
-		width: 100%;
-	}
-}
-.col-3{
-	justify-content: center;
-	align-items: center;
-	@include mobile {
-		display: none;
-	}
-	@include tablet {
-		display: none;
 	}
 }
