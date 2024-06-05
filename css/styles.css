@@ -2,13 +2,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  max-width: 1399px;
 }
 
 html {
   font-size: 62.5%;
 }
 
+@media screen and (min-width: 1400px) {
+  nav {
+    height: 7rem;
+  }
+}
 nav img {
   margin-left: 2rem;
 }
@@ -16,6 +20,12 @@ nav img {
 ul li {
   font-size: 1.6rem;
   padding-left: 2rem;
+}
+@media screen and (min-width: 1400px) {
+  ul li {
+    font-size: 2.5rem;
+    padding-right: 2rem;
+  }
 }
 
 p {
@@ -55,6 +65,10 @@ h3 {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
   background-color: #0a042e;
   height: 5rem;
 }
@@ -63,37 +77,42 @@ footer {
     height: 4rem;
   }
 }
+@media screen and (min-width: 1400px) {
+  footer {
+    height: 7rem;
+  }
+}
 footer h3 {
   color: white;
 }
 @media screen and (max-width: 480px) {
   footer h3 {
     font-size: 1.3rem;
-    padding: 1.2rem;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 780px) {
   footer h3 {
     font-size: 1.4rem;
-    padding: 1.5rem;
   }
 }
 @media screen and (min-width: 781px) and (max-width: 992px) {
   footer h3 {
     font-size: 1.6rem;
-    padding: 1.4rem;
   }
 }
 @media screen and (min-width: 993px) and (max-width: 1199px) {
   footer h3 {
     font-size: 1.7rem;
-    padding: 1.6rem;
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
   footer h3 {
     font-size: 1.7rem;
-    padding: 1.6rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  footer h3 {
+    font-size: 2.5rem;
   }
 }
 
@@ -103,6 +122,7 @@ footer h3 {
   flex-wrap: wrap;
   background-color: #f4e8aa;
   background-size: cover;
+  height: auto;
 }
 @media screen and (max-width: 480px) {
   .contenedor {
@@ -121,7 +141,6 @@ footer h3 {
 .contenedor .contenedor_imagen {
   display: flex;
   flex-wrap: wrap;
-  width: 500px;
   height: auto;
 }
 @media screen and (max-width: 480px) {
@@ -137,6 +156,21 @@ footer h3 {
 @media screen and (min-width: 781px) and (max-width: 992px) {
   .contenedor .contenedor_imagen {
     width: 400px;
+  }
+}
+@media screen and (min-width: 993px) and (max-width: 1199px) {
+  .contenedor .contenedor_imagen {
+    width: 500px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .contenedor .contenedor_imagen {
+    width: 550px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .contenedor .contenedor_imagen {
+    width: 700px;
   }
 }
 .contenedor .cuerpo {
@@ -186,7 +220,7 @@ footer h3 {
 }
 @media screen and (max-width: 480px) {
   .contenedor .cuerpo h1 {
-    font-size: 2.2rem;
+    font-size: 2.7rem;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 780px) {
@@ -202,18 +236,24 @@ footer h3 {
 @media screen and (min-width: 993px) and (max-width: 1199px) {
   .contenedor .cuerpo h1 {
     font-size: 4rem;
-    margin-top: 8px;
+    margin-top: 1.5rem;
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
   .contenedor .cuerpo h1 {
     font-size: 4rem;
-    margin-bottom: 5px;
+    margin-top: 1.5rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .contenedor .cuerpo h1 {
+    font-size: 6rem;
+    padding-top: 2rem;
   }
 }
 @media screen and (max-width: 480px) {
   .contenedor .cuerpo p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -234,16 +274,23 @@ footer h3 {
 }
 @media screen and (min-width: 993px) and (max-width: 1199px) {
   .contenedor .cuerpo p {
-    font-size: 2rem;
+    font-size: 2.22rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
   .contenedor .cuerpo p {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .contenedor .cuerpo p {
+    margin-right: 2.5rem;
+    margin-left: 2.5rem;
+    font-size: 3.3rem;
   }
 }
 
@@ -299,8 +346,7 @@ aside {
 }
 
 .migue {
-  width: 250px;
-  height: 350px;
+  max-width: 330px;
   border-radius: 15%;
 }
 @media screen and (max-width: 480px) {
@@ -324,6 +370,12 @@ aside {
     height: 270px;
   }
 }
+@media screen and (min-width: 993px) and (max-width: 1199px) {
+  .migue {
+    width: 250px;
+    height: 350px;
+  }
+}
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
   .migue {
     width: 260px;
@@ -333,6 +385,7 @@ aside {
 }
 
 .shanta {
+  max-width: 330px;
   border-radius: 100%;
 }
 @media screen and (min-width: 481px) and (max-width: 780px) {
@@ -364,8 +417,7 @@ aside {
 }
 
 .kwan {
-  width: 250px;
-  height: 350px;
+  max-width: 330px;
   border-radius: 15%;
 }
 @media screen and (max-width: 480px) {
@@ -389,6 +441,12 @@ aside {
     height: 270px;
   }
 }
+@media screen and (min-width: 993px) and (max-width: 1199px) {
+  .kwan {
+    width: 250px;
+    height: 350px;
+  }
+}
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
   .kwan {
     width: 260px;
@@ -398,6 +456,7 @@ aside {
 }
 
 .omm {
+  max-width: 330px;
   border-radius: 100%;
 }
 @media screen and (min-width: 481px) and (max-width: 780px) {
@@ -441,6 +500,12 @@ aside {
     font-size: 2.2rem;
   }
 }
+@media screen and (min-width: 1400px) {
+  #rayo-azul-violeta h1 {
+    font-size: 5rem;
+    padding-top: 2.5rem;
+  }
+}
 
 @media screen and (max-width: 480px) {
   #rayo-azul-violeta h2 {
@@ -455,6 +520,12 @@ aside {
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
   #rayo-azul-violeta h2 {
     font-size: 2.4rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  #rayo-azul-violeta h2 {
+    font-size: 3.6rem;
+    padding-bottom: 4px;
   }
 }
 
@@ -474,6 +545,13 @@ aside {
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
   #rayo-azul-violeta h3 {
     font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  #rayo-azul-violeta h3 {
+    font-size: 2.7rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
   }
 }
 
@@ -500,6 +578,13 @@ aside {
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
   #rayo-azul-violeta p {
     font-size: 1.9rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  #rayo-azul-violeta p {
+    margin-right: 2.5rem;
+    margin-left: 2.5rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -538,8 +623,7 @@ article {
 }
 
 .rafa {
-  width: 250px;
-  height: 350px;
+  max-width: 330px;
   border-radius: 15%;
 }
 @media screen and (max-width: 480px) {
@@ -563,6 +647,12 @@ article {
     height: 270px;
   }
 }
+@media screen and (min-width: 993px) and (max-width: 1199px) {
+  .rafa {
+    width: 250px;
+    height: 350px;
+  }
+}
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
   .rafa {
     width: 260px;
@@ -572,6 +662,7 @@ article {
 }
 
 .sanea {
+  max-width: 330px;
   border-radius: 100%;
 }
 @media screen and (min-width: 481px) and (max-width: 780px) {
@@ -603,8 +694,7 @@ article {
 }
 
 .chamu {
-  width: 250px;
-  height: 350px;
+  max-width: 330px;
   border-radius: 15%;
 }
 @media screen and (max-width: 480px) {
@@ -628,6 +718,12 @@ article {
     height: 270px;
   }
 }
+@media screen and (min-width: 993px) and (max-width: 1199px) {
+  .chamu {
+    width: 250px;
+    height: 350px;
+  }
+}
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
   .chamu {
     width: 260px;
@@ -637,6 +733,7 @@ article {
 }
 
 .atae {
+  max-width: 330px;
   border-radius: 100%;
 }
 @media screen and (min-width: 481px) and (max-width: 780px) {
@@ -680,7 +777,17 @@ article {
     font-size: 2.2rem;
   }
 }
+@media screen and (min-width: 1400px) {
+  #rayo-verde-rosa h1 {
+    font-size: 5rem;
+    padding-top: 2.5rem;
+  }
+}
 
+#rayo-verde-rosa h2 {
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
 @media screen and (max-width: 480px) {
   #rayo-verde-rosa h2 {
     font-size: 1.5rem;
@@ -699,6 +806,12 @@ article {
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
   #rayo-verde-rosa h2 {
     font-size: 2.2rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  #rayo-verde-rosa h2 {
+    font-size: 3.6rem;
+    padding-bottom: 4px;
   }
 }
 
@@ -725,6 +838,13 @@ article {
     font-size: 2rem;
   }
 }
+@media screen and (min-width: 1400px) {
+  #rayo-verde-rosa h3 {
+    font-size: 2.7rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+  }
+}
 
 #rayo-verde-rosa p {
   margin-right: 1.5rem;
@@ -749,6 +869,13 @@ article {
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
   #rayo-verde-rosa p {
     font-size: 1.95rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  #rayo-verde-rosa p {
+    margin-right: 2.5rem;
+    margin-left: 2.5rem;
+    font-size: 2.6rem;
   }
 }
 
@@ -785,8 +912,7 @@ article {
 }
 
 .uri {
-  width: 250px;
-  height: 350px;
+  max-width: 330px;
   border-radius: 15%;
 }
 @media screen and (min-width: 481px) and (max-width: 780px) {
@@ -801,6 +927,12 @@ article {
     height: 270px;
   }
 }
+@media screen and (min-width: 993px) and (max-width: 1199px) {
+  .uri {
+    width: 250px;
+    height: 350px;
+  }
+}
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
   .uri {
     width: 260px;
@@ -810,8 +942,7 @@ article {
 }
 
 .uriel {
-  width: 250px;
-  height: 350px;
+  max-width: 330px;
   border-radius: 15%;
 }
 @media screen and (max-width: 480px) {
@@ -835,6 +966,12 @@ article {
     height: 270px;
   }
 }
+@media screen and (min-width: 993px) and (max-width: 1199px) {
+  .uriel {
+    width: 250px;
+    height: 350px;
+  }
+}
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
   .uriel {
     width: 260px;
@@ -844,8 +981,7 @@ article {
 }
 
 .telai {
-  width: 240px;
-  height: 240px;
+  max-width: 330px;
   border-radius: 100%;
 }
 @media screen and (min-width: 481px) and (max-width: 780px) {
@@ -858,6 +994,12 @@ article {
   .telai {
     width: 170px;
     height: 170px;
+  }
+}
+@media screen and (min-width: 993px) and (max-width: 1199px) {
+  .telai {
+    width: 240px;
+    height: 240px;
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -870,8 +1012,7 @@ article {
 }
 
 .halai {
-  width: 240px;
-  height: 240px;
+  max-width: 330px;
   border-radius: 100%;
 }
 @media screen and (min-width: 481px) and (max-width: 780px) {
@@ -884,6 +1025,12 @@ article {
   .halai {
     width: 170px;
     height: 170px;
+  }
+}
+@media screen and (min-width: 993px) and (max-width: 1199px) {
+  .halai {
+    width: 240px;
+    height: 240px;
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -913,6 +1060,12 @@ article {
     font-size: 3rem;
   }
 }
+@media screen and (min-width: 1400px) {
+  #rayo-oro-rubi h1 {
+    font-size: 5rem;
+    padding-top: 2.5rem;
+  }
+}
 
 @media screen and (max-width: 480px) {
   #rayo-oro-rubi h2 {
@@ -932,6 +1085,12 @@ article {
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
   #rayo-oro-rubi h2 {
     font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  #rayo-oro-rubi h2 {
+    font-size: 3.6rem;
+    padding-bottom: 4px;
   }
 }
 
@@ -958,6 +1117,13 @@ article {
     font-size: 2rem;
   }
 }
+@media screen and (min-width: 1400px) {
+  #rayo-oro-rubi h3 {
+    font-size: 2.7rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+  }
+}
 
 #rayo-oro-rubi p {
   margin-right: 1.5rem;
@@ -982,6 +1148,13 @@ article {
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
   #rayo-oro-rubi p {
     font-size: 1.9rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  #rayo-oro-rubi p {
+    margin-right: 3rem;
+    margin-left: 3rem;
+    font-size: 2.58rem;
   }
 }
 
@@ -1049,6 +1222,7 @@ article {
 }
 
 .mikael {
+  max-width: 330px;
   border-radius: 15%;
 }
 @media screen and (min-width: 481px) and (max-width: 780px) {
@@ -1067,17 +1241,25 @@ article {
   .mikael {
     width: 240px;
     height: 350px;
+    margin-bottom: 2rem;
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
   .mikael {
     width: 260px;
     height: 370px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .mikael {
+    width: 330px;
+    height: 400px;
+    margin-bottom: 3rem;
   }
 }
 
 .elementos {
-  border-radius: 15%;
+  border-radius: 10%;
 }
 @media screen and (min-width: 481px) and (max-width: 780px) {
   .elementos {
@@ -1095,6 +1277,7 @@ article {
   .elementos {
     width: 240px;
     height: 350px;
+    margin-bottom: 2rem;
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -1103,8 +1286,16 @@ article {
     height: 370px;
   }
 }
+@media screen and (min-width: 1400px) {
+  .elementos {
+    width: 330px;
+    height: 400px;
+    margin-bottom: 3rem;
+  }
+}
 
 .cristal {
+  max-width: 330px;
   border-radius: 15%;
 }
 @media screen and (min-width: 481px) and (max-width: 780px) {
@@ -1123,7 +1314,7 @@ article {
   .cristal {
     width: 240px;
     height: 240px;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -1133,8 +1324,14 @@ article {
     margin-bottom: 2rem;
   }
 }
+@media screen and (min-width: 1400px) {
+  .cristal {
+    margin-bottom: 5rem;
+  }
+}
 
 .metatron {
+  max-width: 330px;
   border-radius: 15%;
 }
 @media screen and (max-width: 480px) {
@@ -1162,7 +1359,7 @@ article {
   .metatron {
     width: 240px;
     height: 240px;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -1170,6 +1367,11 @@ article {
     width: 260px;
     height: 260px;
     margin-bottom: 2rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .metatron {
+    margin-bottom: 5rem;
   }
 }
 
@@ -1201,6 +1403,12 @@ article {
     padding-bottom: 5px;
   }
 }
+@media screen and (min-width: 1400px) {
+  .container-contacto h1 {
+    font-size: 5rem;
+    padding-top: 2.5rem;
+  }
+}
 
 .container-contacto h3 {
   padding-top: 1rem;
@@ -1218,6 +1426,7 @@ article {
 @media screen and (min-width: 993px) and (max-width: 1199px) {
   .container-contacto h3 {
     padding-top: 2rem;
+    padding-bottom: 5px;
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -1226,10 +1435,17 @@ article {
     font-size: 2rem;
   }
 }
+@media screen and (min-width: 1400px) {
+  .container-contacto h3 {
+    font-size: 2.7rem;
+    margin-top: 2rem;
+    padding-bottom: 5px;
+  }
+}
 
 @media screen and (max-width: 480px) {
   .container-contacto p {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     font-weight: 540;
     margin-right: 2rem;
     margin-left: 2rem;
@@ -1253,7 +1469,7 @@ article {
   .container-contacto p {
     margin-right: 5rem;
     margin-left: 5rem;
-    font-size: 2.2rem;
+    font-size: 2.3rem;
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -1261,6 +1477,13 @@ article {
     margin-right: 5rem;
     margin-left: 5rem;
     font-size: 2.4rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .container-contacto p {
+    margin-right: 3rem;
+    margin-left: 3rem;
+    font-size: 3.5rem;
   }
 }
 
@@ -1279,6 +1502,15 @@ article {
   margin-top: 1.5rem;
   font-weight: 500;
 }
+@media screen and (max-width: 480px) {
+  .wsp {
+    width: 10rem;
+    height: 3rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+  }
+}
 @media screen and (min-width: 993px) and (max-width: 1199px) {
   .wsp {
     width: 12rem;
@@ -1295,6 +1527,16 @@ article {
     font-size: 1.6rem;
     font-weight: 500;
     margin-top: 1rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .wsp {
+    width: 16rem;
+    height: 5rem;
+    font-size: 2.1rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    border-radius: 5%;
   }
 }
 

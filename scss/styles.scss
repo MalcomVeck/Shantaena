@@ -4,7 +4,6 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	max-width: 1399px;
 
 }
 html {
@@ -12,6 +11,9 @@ html {
 }
 
 nav{
+	@include ssj {
+	height: 7rem;
+	}
 	img{
 		margin-left: 2rem;
 	}
@@ -20,6 +22,10 @@ ul{
 	li{
 		font-size: 1.6rem;
 		padding-left: 2rem;
+	@include ssj {
+		font-size: 2.5rem;
+		padding-right: 2rem;
+		}
 	}
 }
 p {
@@ -56,32 +62,37 @@ h3 {
 }
 
 footer{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
 	background-color: #0a042e;
 	height: 5rem;
 	@include mobile {
 		height: 4rem;
 	}
+	@include ssj {
+		height: 7rem;
+	}
 	h3 {
 		color: white;
 		@include mobile { 
 			font-size: 1.3rem;
-			padding: 1.2rem;
 		}
 		@include tablet {
 			font-size: 1.4rem;
-			padding: 1.5rem;
 		}
 		@include notebook {
 			font-size: 1.6rem;
-			padding: 1.4rem;
 		}
 		@include desktop {
 			font-size: 1.7rem;
-			padding: 1.6rem;
 		}
 		@include exlarg {
 			font-size: 1.7rem;
-			padding: 1.6rem;
+		}
+		@include ssj {
+			font-size: 2.5rem;
 		}
 	}
 }
@@ -93,6 +104,7 @@ footer{
 	flex-wrap: wrap;
 	background-color: #f4e8aa;
 	background-size: cover;
+	height: auto;
 	@include mobile {
 		flex-direction: column;
 		justify-content: center;
@@ -106,7 +118,6 @@ footer{
 	.contenedor_imagen{
 		display: flex;
 		flex-wrap: wrap;
-		width: 500px;
 		height: auto;
 		@include mobile {
 			width: 250px;
@@ -116,6 +127,15 @@ footer{
 		}
 		@include notebook {
 			width: 400px;
+		}
+		@include desktop {
+			width:500px;
+		}
+		@include exlarg {
+			width: 550px;
+		}
+		@include ssj {
+			width: 700px;
 		}
 	}
 	.cuerpo{
@@ -158,26 +178,30 @@ footer{
 			animation-timing-function: linear;
 			animation-iteration-count: infinite;
 			@include mobile{
-			font-size: 2.2rem;
+				font-size: 2.7rem;
 			}
 			@include tablet {
-			font-size: 2.8rem;
+				font-size: 2.8rem;
 			}
 			@include notebook {
-			font-size: 3.3rem;
+				font-size: 3.3rem;
 			}
 			@include desktop {
-			font-size: 4rem;
-			margin-top: 8px;
+				font-size: 4rem;
+				margin-top: 1.5rem;
 			}
 			@include exlarg {
 				font-size: 4rem;
-				margin-bottom: 5px;
-				}
+				margin-top: 1.5rem;
+			}
+			@include ssj {
+				font-size: 6rem;
+				padding-top: 2rem;
+			}
 		}
 		p {
 			@include mobile {
-			font-size: 1.4rem;
+			font-size: 1.6rem;
 			padding-left: 2rem;
 			padding-right: 2rem;
 			}
@@ -192,14 +216,19 @@ footer{
 			padding-right: 1.5rem;
 			}
 			@include desktop {
-			font-size: 2rem;
+			font-size: 2.22rem;
 			padding-left: 1.5rem;
 			padding-right: 1.5rem;
 			}
 			@include exlarg {
-			font-size: 2.2rem;
+			font-size: 2.5rem;
 			padding-left: 1.5rem;
 			padding-right: 1.5rem;
+			}
+			@include ssj {
+			margin-right: 2.5rem;
+			margin-left: 2.5rem;
+			font-size: 3.3rem;
 			}
 		}
 	}
@@ -249,8 +278,7 @@ aside {
 	}
 }
 .migue {
-	width: 250px;
-	height: 350px;
+	max-width: 330px;
 	border-radius: 15%;
 	@include mobile {
 		width: 150px;
@@ -267,6 +295,10 @@ aside {
 		width: 170px;
 		height: 270px;
 	}
+	@include desktop {
+		width: 250px;
+		height: 350px;
+	}
 	@include exlarg {
 		width: 260px;
 		height: 360px;
@@ -274,6 +306,7 @@ aside {
 	}
 }
 .shanta {
+	max-width: 330px;
 	border-radius: 100%;
 	@include tablet {
 		width: 120px;
@@ -296,8 +329,7 @@ aside {
 	}
 }
 .kwan {
-	width: 250px;
-	height: 350px;
+	max-width: 330px;
 	border-radius: 15%;
 	@include mobile {
 		width: 150px;
@@ -314,6 +346,10 @@ aside {
 		width: 170px;
 		height: 270px;
 	}
+	@include desktop {
+		width: 250px;
+		height: 350px;
+	}
 	@include exlarg {
 		width: 260px;
 		height: 360px;
@@ -321,6 +357,7 @@ aside {
 	}
 }
 .omm {
+	max-width: 330px;
 	border-radius: 100%;
 	@include tablet {
 		width: 120px;
@@ -350,6 +387,10 @@ aside {
 	@include tablet {
 		font-size: 2.2rem;
 	}
+	@include ssj {
+		font-size: 5rem;
+		padding-top: 2.5rem;
+	}
 }
 #rayo-azul-violeta h2 {
 	@include mobile {
@@ -360,6 +401,10 @@ aside {
 	}
 	@include exlarg {
 		font-size: 2.4rem;
+	}
+	@include ssj {
+		font-size: 3.6rem;
+		padding-bottom: 4px;
 	}
 }
 #rayo-azul-violeta h3 {
@@ -372,6 +417,11 @@ aside {
 	}
 	@include exlarg {
 		font-size: 2rem;
+	}
+	@include ssj {
+		font-size: 2.7rem;
+		padding-top: 1.5rem;
+		padding-bottom: 1rem;
 	}
 }
 #rayo-azul-violeta p {
@@ -389,6 +439,11 @@ aside {
 	}
 	@include exlarg {
 		font-size: 1.9rem;
+	}
+	@include ssj {
+		margin-right: 2.5rem;
+		margin-left: 2.5rem;
+		font-size: 2.5rem;
 	}
 }
 
@@ -422,8 +477,7 @@ article {
 	}
 }
 .rafa {
-	width: 250px;
-	height: 350px;
+	max-width: 330px;
 	border-radius: 15%;
 	@include mobile {
 		width: 150px;
@@ -440,6 +494,10 @@ article {
 		width: 170px;
 		height: 270px;
 	}
+	@include desktop {
+		width: 250px;
+		height: 350px;
+	}
 	@include exlarg {
 		width: 260px;
 		height: 360px;
@@ -447,6 +505,7 @@ article {
 	}
 }
 .sanea {
+	max-width: 330px;
 	border-radius: 100%;
 	@include tablet {
 		width: 120px;
@@ -469,8 +528,7 @@ article {
 	}
 }
 .chamu {
-	width: 250px;
-	height: 350px;
+	max-width: 330px;
 	border-radius: 15%;
 	@include mobile {
 		width: 150px;
@@ -487,6 +545,10 @@ article {
 		width: 170px;
 		height: 270px;
 	}
+	@include desktop {
+		width: 250px;
+		height: 350px;
+	}
 	@include exlarg {
 		width: 260px;
 		height: 360px;
@@ -494,6 +556,7 @@ article {
 	}
 }
 .atae {
+	max-width: 330px;
 	border-radius: 100%;
 	@include tablet {
 		width: 120px;
@@ -524,8 +587,14 @@ article {
 	@include tablet {
 		font-size: 2.2rem;
 	}
+	@include ssj {
+		font-size: 5rem;
+		padding-top: 2.5rem;
+	}
 }
 #rayo-verde-rosa h2 {
+	margin-right: 2rem;
+	margin-left: 2rem;
 	@include mobile {
 		font-size: 1.5rem;
 	}
@@ -537,6 +606,10 @@ article {
 	}
 	@include exlarg {
 		font-size: 2.2rem;
+	}
+	@include ssj {
+		font-size: 3.6rem;
+		padding-bottom: 4px;
 	}
 }
 #rayo-verde-rosa h3 {
@@ -552,6 +625,11 @@ article {
 	}
 	@include exlarg {
 		font-size: 2rem;
+	}
+	@include ssj {
+		font-size: 2.7rem;
+		padding-top: 1.5rem;
+		padding-bottom: 1rem;
 	}
 }
 #rayo-verde-rosa p {
@@ -569,6 +647,11 @@ article {
 	}
 	@include exlarg {
 		font-size: 1.95rem;
+	}
+	@include ssj {
+		margin-right: 2.5rem;
+		margin-left: 2.5rem;
+		font-size: 2.6rem;
 	}
 }
 
@@ -605,8 +688,7 @@ article {
 }
 
 .uri {
-	width: 250px;
-	height: 350px;
+	max-width: 330px;
 	border-radius: 15%;
 	@include tablet {
 		width: 120px;
@@ -616,6 +698,10 @@ article {
 		width: 170px;
 		height: 270px;
 	}
+	@include desktop {
+		width: 250px;
+		height: 350px;
+	}
 	@include exlarg {
 		width: 260px;
 		height: 360px;
@@ -623,8 +709,7 @@ article {
 	}
 }
 .uriel {
-	width: 250px;
-	height: 350px;
+	max-width: 330px;
 	border-radius: 15%;
 	@include mobile {
 		width: 150px;
@@ -641,6 +726,10 @@ article {
 		width: 170px;
 		height: 270px;
 	}
+	@include desktop {
+		width: 250px;
+		height: 350px;
+	}
 	@include exlarg {
 		width: 260px;
 		height: 360px;
@@ -648,8 +737,7 @@ article {
 	}
 }
 .telai {
-	width: 240px;
-	height: 240px;
+	max-width: 330px;
 	border-radius: 100%;
 	@include tablet {
 		width: 120px;
@@ -658,6 +746,10 @@ article {
 	@include notebook {
 		width: 170px;
 		height: 170px;
+	}
+	@include desktop {
+		width: 240px;
+		height: 240px;
 	}
 	@include exlarg {
 		width: 260px;
@@ -668,8 +760,7 @@ article {
 }
 
 .halai {
-	width: 240px;
-	height: 240px;
+	max-width: 330px;
 	border-radius: 100%;
 	@include tablet {
 		width: 120px;
@@ -678,7 +769,11 @@ article {
 	@include notebook {
 		width: 170px;
 		height: 170px;
-		}
+	}
+	@include desktop {
+		width: 240px;
+		height: 240px;
+	}
 	@include exlarg {
 		width: 260px;
 		height: 260px;
@@ -697,6 +792,10 @@ article {
 	@include exlarg {
 		font-size: 3rem;
 	}
+	@include ssj {
+		font-size: 5rem;
+		padding-top: 2.5rem;
+	}
 }
 #rayo-oro-rubi h2 {
 	@include mobile {
@@ -710,6 +809,10 @@ article {
 	}
 	@include exlarg {
 		font-size: 2.5rem;
+	}
+	@include ssj {
+		font-size: 3.6rem;
+		padding-bottom: 4px;
 	}
 }
 
@@ -726,6 +829,11 @@ article {
 	}
 	@include exlarg {
 		font-size: 2rem;
+	}
+	@include ssj {
+		font-size: 2.7rem;
+		padding-top: 1.5rem;
+		padding-bottom: 1rem;
 	}
 }
 
@@ -744,6 +852,11 @@ article {
 	}
 	@include exlarg {
 		font-size: 1.9rem;
+	}
+	@include ssj {
+		margin-right: 3rem;
+		margin-left: 3rem;
+		font-size: 2.58rem;
 	}
 }
 
@@ -807,6 +920,7 @@ article {
 }
 
 .mikael {
+	max-width: 330px;
 	border-radius: 15%;
 	@include tablet {
 		width: 120px;
@@ -819,15 +933,21 @@ article {
 	@include desktop {
 		width: 240px;
 		height: 350px;
+		margin-bottom: 2rem;
 	}
 	@include exlarg {
 		width: 260px;
 		height: 370px;
+	}
+	@include ssj {
+		width: 330px;
+		height: 400px;
+		margin-bottom: 3rem;
 	}
 }
 
 .elementos {
-	border-radius: 15%;
+	border-radius: 10%;
 	@include tablet {
 		width: 120px;
 		height: 180px;
@@ -839,14 +959,21 @@ article {
 	@include desktop {
 		width: 240px;
 		height: 350px;
+		margin-bottom: 2rem;
 	}
 	@include exlarg {
 		width: 260px;
 		height: 370px;
 	}
+	@include ssj {
+		width: 330px;
+		height: 400px;
+		margin-bottom: 3rem;
+	}
 }
 
 .cristal {
+	max-width: 330px;
 	border-radius: 15%;
 	@include tablet {
 		width: 120px;
@@ -859,16 +986,20 @@ article {
 	@include desktop {
 		width: 240px;
 		height: 240px;
-		margin-bottom: 2rem;
+		margin-bottom: 4rem;
 	}
 	@include exlarg {
 		width: 260px;
 		height: 260px;
 		margin-bottom: 2rem;
 	}
+	@include ssj {
+		margin-bottom: 5rem;
+	}
 }
 
 .metatron {
+	max-width: 330px;
 	border-radius: 15%;
 	@include mobile {
 		width: 250px;
@@ -888,12 +1019,15 @@ article {
 	@include desktop {
 		width: 240px;
 		height: 240px;
-		margin-bottom: 2rem;
+		margin-bottom: 4rem;
 	}
 	@include exlarg {
 		width: 260px;
 		height: 260px;
 		margin-bottom: 2rem;
+	}
+	@include ssj {
+		margin-bottom: 5rem;
 	}
 }
 
@@ -916,6 +1050,10 @@ article {
 		padding-top: 2rem;
 		padding-bottom: 5px;
 	}
+	@include ssj {
+		font-size: 5rem;
+		padding-top: 2.5rem;
+	}
 }
 
 .container-contacto h3 {
@@ -928,16 +1066,22 @@ article {
 	}
 	@include desktop {
 		padding-top: 2rem;
+		padding-bottom: 5px;
 	}
 	@include exlarg {
 		padding-top: 2rem;
 		font-size: 2rem;
 	}
+	@include ssj {
+		font-size: 2.7rem;
+		margin-top: 2rem;
+		padding-bottom: 5px;
+	}
 }
 
 .container-contacto p {
 	@include mobile {
-		font-size: 1.6rem;
+		font-size: 1.7rem;
 		font-weight: 540;
 		margin-right: 2rem;
 		margin-left: 2rem;
@@ -955,12 +1099,17 @@ article {
 	@include desktop {
 		margin-right: 5rem;
 		margin-left: 5rem;
-		font-size: 2.2rem;
+		font-size: 2.3rem;
 	}
 	@include exlarg {
 		margin-right: 5rem;
 		margin-left: 5rem;
 		font-size: 2.40rem;
+	}
+	@include ssj {
+		margin-right: 3rem;
+		margin-left: 3rem;
+		font-size: 3.5rem;
 	}
 }
 
@@ -978,6 +1127,13 @@ article {
 	font-size: 1.1rem;
 	margin-top: 1.5rem;
 	font-weight: 500;
+	@include mobile{
+		width: 10rem;
+		height: 3rem;
+		font-size: 1.4rem;
+		font-weight: 500;
+		margin-top: 1.5rem;
+	}
 	@include desktop{
 		width: 12rem;
 		height: 3rem;
@@ -991,6 +1147,14 @@ article {
 		font-size: 1.6rem;
 		font-weight: 500;
 		margin-top: 1rem;
+	}
+	@include ssj{
+		width: 16rem;
+		height: 5rem;
+		font-size: 2.1rem;
+		font-weight: 500;
+		margin-top: 1rem;
+		border-radius: 5%;
 	}
 }
 

@@ -23,3 +23,8 @@
         @content;
     }
 }
+@mixin ssj {
+    @media screen and (min-width: 1400px) {
+        @content;
+    }
+}
