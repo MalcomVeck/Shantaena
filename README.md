@@ -1,4 +1,4 @@
-#Web "Terapia Vibracional Shantaena"
+# Web "Terapia Vibracional Shantaena"
 
 Proyecto Web "Terapia Vibracional Shantaena" realizado para la Entrega Final del Curso Desarrollo Web en CoderHouse.
 
