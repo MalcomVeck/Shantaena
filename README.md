@@ -1,5 +1,6 @@
-# Shantaena
-Proyecto Web "Terapia Vibracional Shantaena" realizado para la Entrega Final Curso Desarrollo Web en CoderHouse.
+#Web "Terapia Vibracional Shantaena"
+
+Proyecto Web "Terapia Vibracional Shantaena" realizado para la Entrega Final del Curso Desarrollo Web en CoderHouse.
 
 GitHub Pages Activo:
 https://malcomveck.github.io/Shantaena/
